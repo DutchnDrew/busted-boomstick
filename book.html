@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking Between Worlds | Art Book by Drew Eveland</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .book-hero {
+            min-height: auto;
+            padding: 8rem 2rem 4rem;
+        }
+        
+        .book-hero h1 {
+            font-family: 'Crimson Text', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 0.5rem;
+        }
+        
+        .book-subtitle {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .book-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .book-cover {
+            position: sticky;
+            top: 100px;
+        }
+        
+        .book-cover img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        
+        .book-details {
+            text-align: left;
+        }
+        
+        .book-details .hero-desc {
+            text-align: left;
+            margin: 0 0 2rem 0;
+        }
+        
+        .book-intro {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-style: italic;
+            border-left: 3px solid var(--accent);
+            padding-left: 1.5rem;
+        }
+        
+        .amazon-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #ff9900;
+            color: #000;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.2s;
+            margin-bottom: 3rem;
+        }
+        
+        .amazon-btn:hover {
+            background: #ffb84d;
+            transform: translateY(-2px);
+        }
+        
+        .preview-section {
+            margin-top: 2rem;
+        }
+        
+        .preview-section h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        
+        .preview-grid img {
+            width: 100%;
+            border-radius: 4px;
+            transition: transform 0.2s;
+        }
+        
+        .preview-grid img:hover {
+            transform: scale(1.02);
+        }
+        
+        .book-specs {
+            background: var(--bg-tertiary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        .book-specs h4 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--bg-secondary);
+        }
+        
+        .spec-row:last-child {
+            border-bottom: none;
+        }
+        
+        .spec-label {
+            color: var(--text-secondary);
+        }
+        
+        .spec-value {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+        
+        @media (max-width: 900px) {
+            .book-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .book-cover {
+                position: static;
+                text-align: center;
+            }
+            
+            .book-cover img {
+                max-width: 300px;
+            }
+            
+            .book-details {
+                text-align: center;
+            }
+            
+            .book-details .hero-desc,
+            .book-intro {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-brand">
+            <span class="brand-icon">🎨</span>
+            <span class="brand-text">Busted Boomstick Studios</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#art">Art</a></li>
+            <li><a href="index.html#stories">Stories</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="index.html#varentellia">Varentellia</a></li>
+            <li><a href="index.html#about">About</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero book-hero">
+        <div class="book-layout">
+            <div class="book-cover">
+                <img src="walking-between-worlds-cover.png" alt="Walking Between Worlds - Art Book Cover">
+            </div>
+            
+            <div class="book-details">
+                <h1>Walking Between Worlds</h1>
+                <p class="book-subtitle">An Art Book by Drew Eveland</p>
+                
+                <p class="book-intro">"Art has always been a part of who I am—not as a distant ideal or career choice, but as a survival mechanism. As a combat veteran, I've seen firsthand what happens to the human mind and soul when placed in the crucible of war. Art became the bridge."</p>
+                
+                <p class="hero-desc">A collection of acrylic paintings exploring the dichotomy of color and shadow, the supernova and the silence. From underwater dreamscapes to explosive abstracts, this book chronicles one artist's journey through darkness toward light.</p>
+                
+                <a href="https://www.amazon.com/Walking-Between-Worlds-Drew-Eveland/dp/B0F47ZF66L" class="amazon-btn" target="_blank" rel="noopener">
+                    <span>📚</span> Available on Amazon
+                </a>
+                
+                <div class="preview-section">
+                    <h3>Preview</h3>
+                    <div class="preview-grid">
+                        <img src="preview-1.png" alt="Artwork preview - underwater scene">
+                        <img src="preview-2.png" alt="Artwork preview - Beautiful Things section">
+                    </div>
+                </div>
+                
+                <div class="book-specs">
+                    <h4>Book Details</h4>
+                    <div class="spec-row">
+                        <span class="spec-label">Format</span>
+                        <span class="spec-value">Paperback</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Pages</span>
+                        <span class="spec-value">100+ full-color pages</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Size</span>
+                        <span class="spec-value">8.5" x 11"</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Medium</span>
+                        <span class="spec-value">Acrylic on Canvas</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Sections</span>
+                        <span class="spec-value">Beautiful Things, Dark Things & More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section section-dark">
+        <div class="container">
+            <h2>Inside the Book</h2>
+            <p class="section-intro">Walking Between Worlds is organized into thematic sections, each exploring different emotional territories.</p>
+            
+            <div class="races-grid">
+                <div class="race-card">
+                    <h4>Beautiful Things</h4>
+                    <p>Explorations of love and joy — vibrant dragonflies, serene ocean horizons, and the gentle light that persists even after darkness.</p>
+                </div>
+                <div class="race-card">
+                    <h4>Dark Things</h4>
+                    <p>Confronting the shadows — the weight of memory, the persistence of trauma, and the strange beauty found in difficult places.</p>
+                </div>
+                <div class="race-card">
+                    <h4>The Process</h4>
+                    <p>An intimate look at how each piece begins as raw emotion — chaotic, urgent, cathartic — then slowly finds its form through refinement.</p>
+                </div>
+                <div class="race-card">
+                    <h4>The Artist's Statement</h4>
+                    <p>A personal essay on art as survival, the journey from combat veteran to working artist, and finding humanity through creation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2>Get Your Copy</h2>
+            <p class="section-intro">Walking Between Worlds is available now in paperback format.</p>
+            <a href="https://www.amazon.com/Walking-Between-Worlds-Drew-Eveland/dp/B0F47ZF66L" class="amazon-btn" target="_blank" rel="noopener" style="margin-top: 1rem;">
+                <span>📚</span> Buy on Amazon
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">🎨</span>
+                    <span>Busted Boomstick Studios</span>
+                </div>
+                <p class="footer-tagline">Art from the space between.</p>
+                <div class="footer-contact">
+                    <a href="mailto:BustedBoomstick@Gmail.com">BustedBoomstick@Gmail.com</a>
+                </div>
+                <p class="footer-copy">&copy; 2025 Drew Eveland. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
