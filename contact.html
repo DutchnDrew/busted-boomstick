@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact — Busted Boomstick Studios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="story-page">
+    <div class="story-header">
+      <h1>Contact & Commissions</h1>
+      <p class="story-meta">Reach out for inquiries, commissions, or press.</p>
+    </div>
+
+    <section>
+      <p>If you want to contact me directly, email: <a href="mailto:drew.eveland@gmail.com">drew.eveland@gmail.com</a>.</p>
+
+      <p>Below is a simple form. It's not active until you provide a Formspree endpoint. If you don't provide one, the mailto link above is the only contact method.</p>
+
+      <form id="contact-form" action="" method="POST">
+        <label for="name">Your name</label><br>
+        <input id="name" name="name" required><br>
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email" required><br>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="6" required></textarea><br>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+
+      <p style="margin-top:1rem;color:var(--text-secondary);font-size:0.9rem">This form is inactive until you supply a Formspree endpoint. To provide one, paste your Formspree URL here and I’ll enable it.</p>
+    </section>
+  </main>
+</body>
+</html>
