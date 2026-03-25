@@ -74,11 +74,52 @@ body {
     justify-content: center;
     text-align: center;
     padding: 6rem 2rem 4rem;
-    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    background: 
+        radial-gradient(ellipse at 20% 80%, rgba(232, 93, 4, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+        linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 50% 50%, rgba(232, 93, 4, 0.03) 0%, transparent 40%);
+    animation: subtlePulse 8s ease-in-out infinite;
+}
+
+@keyframes subtlePulse {
+    0%, 100% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.1); }
 }
 
 .hero-content {
     max-width: 800px;
+}
+
+.no-ai-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent) 0%, #ff7a22 100%);
+    color: var(--bg-primary);
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 20px rgba(232, 93, 4, 0.4);
+    animation: badgePulse 3s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(232, 93, 4, 0.4); }
+    50% { box-shadow: 0 4px 30px rgba(232, 93, 4, 0.6); }
 }
 
 .hero h1 {
@@ -177,18 +218,25 @@ body {
     background: var(--bg-tertiary);
     border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .art-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(232, 93, 4, 0.15);
 }
 
 .art-card img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 280px;
+    object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.art-card:hover img {
+    transform: scale(1.05);
 }
 
 .stories-grid {
@@ -250,27 +298,30 @@ body {
 }
 
 .world-intro {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
 }
 
 .world-text h3 {
     font-family: 'Crimson Text', serif;
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--accent);
 }
 
 .world-text p {
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     max-width: 700px;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
 .races-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .race-card {
