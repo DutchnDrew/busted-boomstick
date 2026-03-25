@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g1)"/>
+
+  <!-- sword silhouette with glowing edge -->
+  <g transform="translate(600,300)">
+    <rect x="-10" y="-200" width="20" height="400" rx="6" fill="#111"/>
+    <path d="M-30 -200 L30 -200 L60 -150 L0 260 L-60 -150 Z" fill="#111" stroke="#e85d04" stroke-width="4"/>
+    <circle cx="0" cy="-150" r="18" fill="#3a86ff" opacity="0.9"/>
+  </g>
+
+  <!-- torii / shrine hint -->
+  <g transform="translate(200,380)">
+    <rect x="0" y="-8" width="360" height="12" rx="6" fill="#2b2b2b"/>
+    <rect x="20" y="-70" width="16" height="70" rx="6" fill="#2b2b2b"/>
+    <rect x="324" y="-70" width="16" height="70" rx="6" fill="#2b2b2b"/>
+  </g>
+
+  <!-- subtle smoke -->
+  <g fill="#2b2b2b" opacity="0.5">
+    <path d="M900 120 C860 140, 840 180, 780 210"/>
+    <path d="M920 160 C880 180, 860 210, 800 240"/>
+  </g>
+
+  <rect width="100%" height="100%" fill="black" opacity="0.2"/>
+</svg>
