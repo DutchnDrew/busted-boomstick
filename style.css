@@ -408,6 +408,31 @@ body {
     .nav {
         padding: 1rem;
     }
+
+    .skip-link {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+    }
+}
+
+.skip-link {
+    position: absolute;
+    background: var(--accent);
+    color: var(--bg-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    left: 1rem;
+    top: 1rem;
+    transform: translateY(-120%);
+    transition: transform 0.2s;
+    z-index: 200;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
     
     .nav-links {
         gap: 1rem;
