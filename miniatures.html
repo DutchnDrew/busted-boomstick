@@ -9,6 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="overlay.css">
+    <style>
+        .mini-grid {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            gap: 1.5rem !important;
+            justify-content: center !important;
+        }
+        .mini-grid img {
+            width: 280px !important;
+            height: 280px !important;
+            object-fit: cover !important;
+            border-radius: 8px !important;
+        }
+    </style>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -36,7 +50,7 @@
                 <p class="hero-desc">Bringing fantasy characters to life — one brushstroke at a time. For me, it's about the story and the art more than the game.</p>
             </div>
             <div class="hero-image">
-                <img src="figure-blue-dragon-1.jpg" alt="Blue Dragon miniature">
+                <img src="figure-blue-dragon-1.jpg" alt="Blue Dragon miniature" style="width: 280px; height: 280px; object-fit: cover; border-radius: 8px;">
             </div>
         </div>
     </header>
@@ -47,72 +61,43 @@
                 <h2>The Collection</h2>
                 <p class="section-intro">Each figure is carefully assembled, primed, and painted with acrylics — a labor of love for the fantasy worlds I inhabit.</p>
 
-                <!-- Dragons Group -->
-                <div class="miniature-group">
-                    <h3>Dragons</h3>
-                    <p class="group-desc">Dragons are a favorite — here's my collection of these majestic beasts.</p>
-                    
-                    <div class="figure-cluster">
-                        <h4>Blue Dragon</h4>
-                        <div class="gallery-grid" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                            <div style="text-align: center;"><img src="figure-blue-dragon-1.jpg" alt="Blue Dragon front view" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;"></div>
-                            <div style="text-align: center;"><img src="figure-blue-dragon-2.jpg" alt="Blue Dragon side view" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;"></div>
-                            <div style="text-align: center;"><img src="figure-blue-dragon-3.jpg" alt="Blue Dragon back view" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;"></div>
-                        </div>
-                    </div>
-
-                    <div class="figure-cluster">
-                        <h4>Green Dragon</h4>
-                        <div class="gallery-grid" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                            <div style="text-align: center;"><img src="figure-green-dragon.jpg" alt="Green Dragon" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;"></div>
-                            <div style="text-align: center;"><img src="figure-green-dragon-1.jpg" alt="Green Dragon angle 2" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;"></div>
-                            <div style="text-align: center;"><img src="figure-green-dragon-2.jpg" alt="Green Dragon angle 3" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;"></div>
-                        </div>
-                    </div>
-
-                    <div class="figure-cluster">
-                        <h4>Amethyst Dragon</h4>
-                        <div class="gallery-grid" style="display: flex; gap: 1.5rem; justify-content: center;">
-                            <div style="text-align: center;"><img src="figure-amathyst-dragon.jpg" alt="Amethyst Dragon" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;"></div>
-                            <div style="text-align: center;"><img src="figure-amathyst-dragon-2.jpg" alt="Amethyst Dragon alternate" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;"></div>
-                        </div>
-                    </div>
-
-                    <div class="figure-row" style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
-                        <div style="text-align: center;">
-                            <img src="figure-red-dragon-model.jpg" alt="Red Dragon" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;">
-                            <p style="margin-top: 0.5rem;">Red Dragon</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="figure-black-dragon.jpg" alt="Black Dragon" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;">
-                            <p style="margin-top: 0.5rem;">Black Dragon</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="figure-oriental-dragon.jpg" alt="Oriental Dragon" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;">
-                            <p style="margin-top: 0.5rem;">Oriental Dragon</p>
-                        </div>
-                        <div style="text-align: center;">
-                            <img src="figure-Rainbow%20Dragon.jpg" alt="Rainbow Dragon" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;">
-                            <p style="margin-top: 0.5rem;">Rainbow Dragon</p>
-                        </div>
-                    </div>
+                <h3>Dragons</h3>
+                <p>Dragons are a favorite — here's my collection of these majestic beasts.</p>
+                
+                <h4>Blue Dragon</h4>
+                <div class="mini-grid">
+                    <img src="figure-blue-dragon-1.jpg" alt="Blue Dragon front">
+                    <img src="figure-blue-dragon-2.jpg" alt="Blue Dragon side">
+                    <img src="figure-blue-dragon-3.jpg" alt="Blue Dragon back">
                 </div>
 
-                <!-- Characters Group -->
-                <div class="miniature-group">
-                    <h3>Characters</h3>
-                    <p class="group-desc">Heroes, villains, and everything in between.</p>
-                    
-                    <div class="figure-row" style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
-                        <div class="figure-single" style="text-align: center;">
-                            <img src="figure-dark-dwarf.jpg" alt="Dark Dwarf" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;">
-                            <p style="margin-top: 0.5rem;">Dark Dwarf</p>
-                        </div>
-                        <div class="figure-single" style="text-align: center;">
-                            <img src="figure-fire-giant.jpg" alt="Fire Giant" style="width: 280px !important; height: 280px !important; object-fit: cover !important; border-radius: 8px;">
-                            <p style="margin-top: 0.5rem;">Fire Giant</p>
-                        </div>
-                    </div>
+                <h4>Green Dragon</h4>
+                <div class="mini-grid">
+                    <img src="figure-green-dragon.jpg" alt="Green Dragon">
+                    <img src="figure-green-dragon-1.jpg" alt="Green Dragon angle 2">
+                    <img src="figure-green-dragon-2.jpg" alt="Green Dragon angle 3">
+                </div>
+
+                <h4>Amethyst Dragon</h4>
+                <div class="mini-grid">
+                    <img src="figure-amathyst-dragon.jpg" alt="Amethyst Dragon">
+                    <img src="figure-amathyst-dragon-2.jpg" alt="Amethyst Dragon alternate">
+                </div>
+
+                <h4>Other Dragons</h4>
+                <div class="mini-grid">
+                    <div style="text-align: center;"><img src="figure-red-dragon-model.jpg" alt="Red Dragon"><p>Red Dragon</p></div>
+                    <div style="text-align: center;"><img src="figure-black-dragon.jpg" alt="Black Dragon"><p>Black Dragon</p></div>
+                    <div style="text-align: center;"><img src="figure-oriental-dragon.jpg" alt="Oriental Dragon"><p>Oriental Dragon</p></div>
+                    <div style="text-align: center;"><img src="figure-Rainbow%20Dragon.jpg" alt="Rainbow Dragon"><p>Rainbow Dragon</p></div>
+                </div>
+
+                <h3>Characters</h3>
+                <p>Heroes, villains, and everything in between.</p>
+                
+                <div class="mini-grid">
+                    <div style="text-align: center;"><img src="figure-dark-dwarf.jpg" alt="Dark Dwarf"><p>Dark Dwarf</p></div>
+                    <div style="text-align: center;"><img src="figure-fire-giant.jpg" alt="Fire Giant"><p>Fire Giant</p></div>
                 </div>
             </div>
         </section>
