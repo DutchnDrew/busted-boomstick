@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   lightbox.appendChild(img);
   document.body.appendChild(lightbox);
 
-  document.querySelectorAll('.gallery-grid .art-card img').forEach(function (thumb) {
+  document.querySelectorAll('.gallery-grid .art-card img, .mini-wrapper img').forEach(function (thumb) {
     thumb.style.cursor = 'zoom-in';
     thumb.addEventListener('click', function () {
       img.src = thumb.src;
